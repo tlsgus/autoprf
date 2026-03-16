@@ -4,7 +4,7 @@ import sqlite3
 app = Flask(__name__)
 
 def get_db():
-    conn = sqlite3.connect("database.db")
+    conn = sqlite3.connect("create_db.py")
     conn.row_factory = sqlite3.Row
     return conn
 
